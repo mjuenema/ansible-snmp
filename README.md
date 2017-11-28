@@ -62,3 +62,11 @@ This module is currently in planning stage.
 ## Dependencies
 
 This module requires [pysnmp](http://snmplabs.com/pysnmp/) to be installed.
+
+## References
+
+This module has been inspired by the [ansible-snmp](https://github.com/networklore/ansible-snmp) module by 
+the [Networklore](https://networklore.com/) people.
+
+There are several device specific SNMP modules for Ansible and you should use those over this module whenever possible.
+* [ansible-cisco-snmp](https://github.com/networklore/ansible-cisco-snmp)
