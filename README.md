@@ -1,6 +1,6 @@
 # ansible-snmp
 
-SNMP modules for [Ansible](http://www.ansible.com) to perform `get`, `getnext`, `getbulk`, `set`, `trap` and `inform` 
+Generic SNMP modules for [Ansible](http://www.ansible.com) to perform `get`, `getnext`, `getbulk`, `set`, `trap` and `inform` 
 operations and emulate `walk`.
 
 ## Examples
