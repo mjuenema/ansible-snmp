@@ -11,9 +11,11 @@ public SNMP simulation service.
 ### SNMPv2c Get
 
 ```
-- name: Retrieve sysName with SNMPv2c
+- name: Retrieve sysName and sysLocation with SNMPv2c
   snmp_get:
-    oid: .1.3.6.1.2.1.1.5.0
+    oid: 
+      - 1.3.6.1.2.1.1.5.0
+      - 1.3.6.1.2.1.1.6.0
     host: demo.snmplabs.com
     port: 161
     version: 2
