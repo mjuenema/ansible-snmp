@@ -23,9 +23,15 @@ public SNMP simulation service.
     timeout: 1
     retries: 5
   register: result
+  
+- debug:
+    msg: "sysLocation {{ result.varbinds[1][1] }}"
 ```
 
-The `result` variable will contain SOMETHING ;-)
+* `result.error_indication` will be `True` on an SNMP engine error.
+* `result.error_status` will be `True` on an SNMP PDU error.
+* `result.error_index`, if non-zero refers to `result.varbinds[errorIndex-1]`.
+* `result.varbinds` will contain a list of (oid, value) tuples.
 
 ### SNMPv3 Set
 
