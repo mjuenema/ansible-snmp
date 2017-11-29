@@ -47,9 +47,9 @@ public SNMP simulation service.
     security_level: authpriv
     security_name: usr-sha384-aes256
     auth_protocol: sha384
-    auth_password: authkey1
+    auth_key: authkey1
     priv_protocol: aes256
-    priv_password: privkey1
+    priv_key: privkey1
   register: result
 ```
 
